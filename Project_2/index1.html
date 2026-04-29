@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivani's Flashcards Pro</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+    <div class="bg-animation">
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+    </div>
+
+    <div class="app-container">
+        <div class="card-container" id="cardContainer">
+            <div class="card-inner">
+                <div class="card-front" id="questionDisplay"></div>
+                <div class="card-back" id="answerDisplay"></div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button class="btn-hard" onclick="nextCard(true)">Still Learning</button>
+            <button class="btn-easy" onclick="nextCard(false)">I Know This</button>
+        </div>
+
+        <p id="progress"></p>
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="script1.js"></script>
+</body>
+</html>
